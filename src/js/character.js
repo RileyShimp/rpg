@@ -2,8 +2,9 @@ export default class Character {
   constructor(type) {
     this.type = type;
     this.fullness = 0;
-    this.foodList = ["banana","taco","poo", "pizza"]
-    this.food = ""
+    this.foodList = ["banana","taco","poo", "pizza"];
+    this.food = "";
+    this.level = 1;
   }
 
   eat() {
@@ -30,7 +31,7 @@ export default class Character {
       return this.fullness += 3;
     }
     else if (this.food === "poo"){
-      return this.fullness += 4;
+      return this.fullness += 3;
     }
     else {
       return this.fullness += 3;
