@@ -7,7 +7,7 @@ describe('Character', () => {
   beforeEach(() => {
     character1 = new Character("monkey")
   });
-
+  
   test('should create character object', () => {
     expect(character1.type).toEqual("monkey");
   });
